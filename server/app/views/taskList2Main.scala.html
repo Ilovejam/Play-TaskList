@@ -1,0 +1,10 @@
+@()(implicit flash: Flash)
+
+@main("Task List (Version2)"){
+  <div id="contents"></div>
+  <input type="hidden" id="loginRoute" value="@routes.TaskList2.login()">
+  <input type="hidden" id="validateRoute" value="@routes.TaskList2.validate("a","b" )">
+
+  <script src="@routes.Assets.versioned("javascript/version2.js")"></script>
+    <!-- <script src="@routes.TaskList2.generatedJS()"></script>-->
+}
